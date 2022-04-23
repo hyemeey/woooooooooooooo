@@ -3,6 +3,7 @@
 ## 학습 내용
 
 - Contents Styling
+
   - Text Styling
   - Media Contents Styling -> 크기, 예약
 
@@ -12,7 +13,6 @@
 
 - Cascading Style Sheet : HTML Contents를 스타일링하는 언어
 - 위-아래 실행 흐름에 맞춰서 하단에 적용한 스타일이 최종 적용되어 화면에 표시
-
 
 ## CSS Syntax
 
@@ -37,11 +37,13 @@ selector{property:value;}
 ```
 
 - id
-  - 동일한 HTML 파일에서 단 한번만 사용되어야 함 
+
+  - 동일한 HTML 파일에서 단 한번만 사용되어야 함
     -> 고유하게 사용됨, BackEnd 개발과 연결해서 활용
   - 동일한 HTML Element에 여러개의 id 이름을 사용할 수 없음
 
 - class
+
   - 동일한 HTML 파일에서 같은 이름을 여러번 사용할 수 있음
     -> 여러 요소에 스타일을 공통적용 시킬 때 활용
   - 동일한 HTML Element에 여러개의 class 이름을 사용할 수 있음
@@ -57,6 +59,7 @@ selector{property:value;}
   - class Selector
 
 CSS에서 id, class를 표현하는 방법
+
 - id => #
 - class => .
 
@@ -66,7 +69,59 @@ CSS에서 id, class를 표현하는 방법
 .para2{}
 ```
 
+## CSS Color
 
+- RGB 모드 색 표현 값
 
+  - 10진수
+    - rgb() : rgb 함수
+    - rgb(255,255,255) : rgb() 함수에 각각 r,g,b, 숫자 값을 대입
+  - 16진수
+    - 0~9, A,B,C,D,E,F (16가지 a부터 10으로 침)
+    - R, G, B 각각 2자리로 표현
+      -#A5F645 : 16진수 숫자값으로 표현
 
- 
+- 투명도
+  - Opacity(불투명)
+    - css property => HTML Element 자체가 투명해짐(태그 안의 모든 요소들이 투명해짐)
+    - 0~1 사이의 소수점 값을 사용
+  - Transparent(투명)
+    - 단일 속성값
+  - Alpha(알파채널)
+    - 0~1 사이의 소수점 값을 사용
+    - rgba() 함수 사용
+
+```
+
+div{
+  opacity:0;
+}
+
+div{
+  background-color:transparenct;
+}
+
+div{
+  color:rgba(255,255,255,0.5); =>마지막 넘버는 0~1사이의 소수점 값
+}
+```
+
+## CSS Text
+
+### Text Color
+
+- color 속성
+
+### Text Alignment
+
+- 텍스트 정렬 : text-align
+- 왼쪽(left), 가운데(center), 오른쪽(right), 양쪽 정렬(justify)
+
+### Text Decoration
+
+- 텍스트 줄 긋기 : text-decoration
+- overline(윗줄), line-through(취소선), underline(밑줄), none(줄 없앰)
+
+### Text Transformation
+
+- 영문 대소문자 변경 표시
