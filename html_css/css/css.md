@@ -174,5 +174,49 @@ p{
 - 글꼴 크기 : font-size
 - 값 : px값
 
+### web font
 
+- 로컬 서버에 웹 폰트 파일을 업로드해서 사용하는 방법
+- local() 함수 : 사용자 pc에 설치된 폰트 검색
+- url() 함수 : 웹 폰트 파일 불러오기
+- format() 함수 : 브라우저에서 지원하는 파일만 다운로드]
+- 한글 : 본고딕(Noto Sans), 나눔바른고딕
+- 영문 : roboto, lato, open sans, montserrat 
+- 고딕체 : sans-serif
+- 명조체 : serif
 
+```
+@font-face{
+        font-family: "NB-regular";
+        src:local(Nanumbarun), 
+            url(/resources/nbg_r.woff) format("woff");
+        font-style: normal;
+        font-weight: normal;
+      }
+```
+
+## CSS link
+
+- 4가지 상태 구분
+- link, visited, hover, active
+
+## CSS 상속, cascading, 우선 순위
+
+- 상속
+  - 포함 관계의 HTML 구조에서 부모요소에 적용된 CSS 속성이 자식요소에도
+    적용되는 것
+  - 모든 CSS 속성이 상속되는 것은 아님
+
+- cascading, 우선순위
+  - cascading : 나중에 적용된 CSS가 최종 적용되어 표시
+  - 우선 순위 : 선택자의 우선 순위에 따라서 적용되는 순서를 변경할 수 있음
+    - id: 100
+    - class: 10
+    - tag: 1
+
+## 네이밍 표기법 : 두개 이상의 단어로 네이밍을 할때 단어 사이의 구분
+
+- naming-intro : kebab case : id, class, url 경로
+- naming_intro : snake case : file, folder
+- namingIntro : camel case : js의 변수, 함수 이름
+- NamingIntro : pascal case : js Class
