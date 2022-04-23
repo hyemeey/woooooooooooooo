@@ -115,7 +115,7 @@ div{
 ### Text Alignment
 
 - 텍스트 정렬 : text-align
-- 왼쪽(left), 가운데(center), 오른쪽(right), 양쪽 정렬(justify)
+- 왼쪽(left-기본값), 가운데(center), 오른쪽(right), 양쪽 정렬(justify)
 
 ### Text Decoration
 
@@ -125,3 +125,54 @@ div{
 ### Text Transformation
 
 - 영문 대소문자 변경 표시
+
+### Text Spacing
+
+- 첫 줄 들여쓰기 : text-indent
+- 값 : px값
+
+- 자간 : letter-spacing
+- 값 : px값
+
+- 단어 간격 : word-spacing
+- 값: px값
+
+- 줄 높이 : line-height
+- 텍스트를 포함한 해당 줄의 높이
+- 텍스트의 content-area는 텍스트와 기본여백이 포함
+- 값 : px값, 배수값(소수점 숫자, 단위없음)
+
+- 줄 바꿈 : white-space
+- 값 : wrap(줄바꿈-기본값), nowrap(줄바꿈 안함)
+
+### CSS Font
+
+- 글꼴 종류 : font-family
+  - 앞에서 부터 차례대로 설치된 폰트를 찾아서 설치되어 있는 폰트를 화면에 렌더링 함
+  - Fallback 기능
+```
+p{
+  font-family: Arial, Hevetica, sans-serif;
+}
+```
+
+- Fallback 기능 원리
+  - 브라우저가 폰트를 찾는 기본 위치 : 사용자(클라이언트) PC
+  - 폰트 종류를 선택할 때 사용자들이 범용으로 사용할 만한 폰트를 선택 => Web safe font
+  - 웹 안전 폰트 : 돋음, 굴림
+
+- 브라우저가 폰트를 서버에서 찾도록 하는 기능 => Web Font
+  - 로컬 서버에 직접 웹폰트 파일을 업로드해서 사용
+  - 웹 폰트 서비스를 사용 - 구글 폰트
+
+- 글꼴 기울임 : font-style
+- 값 : italic
+
+- 글꼴 굵기 : font-weight
+- 값 : bold/normal, 숫자값
+
+- 글꼴 크기 : font-size
+- 값 : px값
+
+
+
