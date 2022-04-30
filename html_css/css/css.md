@@ -279,3 +279,61 @@ border : 1px solid red;
   - border-right
   - border-bottom
   - border-left
+
+### background
+
+### background-color
+
+- 배경 적용 범위 : content, padding 영역에만 적용
+
+### background-image
+
+- url() : 이미지 파일 경로, 파일명
+- 배경이미지가 적용된 영역보다 크기가 작을 때 반복되어 영역을 채워줌
+
+### background-repeat
+
+- repeat : 반복(default)
+- repeat-x : 가로방향 반복
+- repeat-y : 세로방향 반복
+- no-repeat : 반복 안함
+
+### backtround-position
+
+- left/center/right
+- top/center/bottom
+
+```
+background-position:가로 세로;
+```
+
+### background-attachment
+
+- 배경이미지 고정
+
+- fixed : 배경이미지 고정
+
+## 박스 전체 크기 계산
+
+- width, padding, border, margin 구성 요소의 값을 합산한 값
+- width, padding, border의 값을 합산한 값이 박스의 전체크기
+- margin은 layout 구성시 별도로 합산이 필요함 
+
+```
+박스 전체 크기 계산
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid red;
+  marign:30px;
+}
+
+width + padding + border = 300 + 20 * 2 + 1 * 2 = 342px;
+
+Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
+
+300 - 40 - 2 = 258px
+```
+
+- box-sizing : box 크기 설정 방식 제어
+  - content-box : content까지 box -> width 
