@@ -338,3 +338,11 @@ Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
 - box-sizing : box 크기 설정 방식 제어
   - content-box : content까지 box => width 적용범위가 content까지 영역
   - border-box : border까지 box =_ width 적용범위가 border까지 영역 
+
+## 이미지, 비디오 크기 조정
+
+- 이미지, 비디오에 width, height 둘 중 하나만 적용하는 경우, 다른 길이
+속성은 비율 유지가 되면서 자동으로 크기 조정이 됨
+
+- width, height 모두 지정시 이미지는 비유 유지가 깨지면서 각각 적용,
+비디오는 각각 적용이 되지만 비율은 계속 유지됨, 영역의 크기만 조정됨
