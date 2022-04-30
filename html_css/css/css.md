@@ -220,3 +220,62 @@ p{
 - naming_intro : snake case : file, folder
 - namingIntro : camel case : js의 변수, 함수 이름
 - NamingIntro : pascal case : js Class
+
+## Box Model
+
+### Height/Width
+
+- 박스 크기 지정
+
+- px : 지정된 값으로 고정 
+- % : 
+  - width : 부모요소를 기준으로 값 비율만큼 지정
+  - height : 자식요소를 기준으로 맞춰짐 => % 지정이 적용되지 않음
+
+### padding
+
+- 방향별 개별 적용
+  - padding-top
+  - paddign-right
+  - padding-bottom
+  - padding-left
+
+- padding : 축약 표현
+  - 값 4개
+  - 값 3개
+  - 값 2개
+  - 값 1개
+
+** top에만 padding을 적용하는 경우
+```
+div{
+  padding-top:100px;
+}
+
+div{
+  padding: 100px 0 0 0;
+}
+```
+
+### margin
+
+- padding과 사용방법이 같음
+
+- auto : 왼쪽, 오른쪽 여백을 동일하게 적용 => 박스 가운데 배치
+
+- margin 상쇄(겹침)
+  - 박스가 상하배치되어 있을 때 박스 사이의 margin이 큰 margin만 적용되는 것
+
+### border
+
+- border 축약 표현
+
+```
+border : 1px solid red;
+```
+
+- border 방향 추가
+  - border-top
+  - border-right
+  - border-bottom
+  - border-left
