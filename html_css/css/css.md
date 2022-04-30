@@ -336,4 +336,5 @@ Ex) padding : 20px, border : 1px, 박스 전체 크기 : 300px => width:?
 ```
 
 - box-sizing : box 크기 설정 방식 제어
-  - content-box : content까지 box -> width 
+  - content-box : content까지 box => width 적용범위가 content까지 영역
+  - border-box : border까지 box =_ width 적용범위가 border까지 영역 
