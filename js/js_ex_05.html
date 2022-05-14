@@ -6,15 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script>
-    function loopStatement(){
+    // 함수 선언
+    function loopStatement(number){
       let dan = 0;
       for(let i=1;i<=9;i++){
-        dan = 2 * i;
-        console.log('2 * ' + i + ' = ' + dan);
+        dan = number * i;
+        console.log( number + ' * ' + i + ' = ' + dan);
       }
     }
 
-    loopStatement();
+    // 함수 호출
+    loopStatement(2);
+    loopStatement(3);
+
+    function print(number){
+      console.log('Hello World' + number);
+    }
+
+    print(1);
+    print(2);
+
+    // return
+    function print2(number){
+      let string = '';
+      string = 'World' + number;
+
+      return string;
+    }
+
+    // 함수 호출
+    console.log('Hello' + print2(5) );
 
   </script>
 </head>
