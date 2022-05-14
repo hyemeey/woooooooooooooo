@@ -239,6 +239,7 @@ for(let i=0; i<3; i+=2){
 - while
   - 논리값이 true일때 반복 실행
 
+```
 while(true){
   // 반복 횟수를 모를때
   // 로그인의 경우
@@ -251,6 +252,26 @@ while(true){
     로그인 실패
   }
 }
+```
+
+### 함수
+
+- 여러 코드를 하나의 패키지로 그룹화
+- 코드의 재사용
+
+```
+// 함수 선언
+function myFunction(){
+  let a=10;
+  let sum=0;
+  sum=sum+a;
+}
+
+// 함수 호출
+myFunction();
+myFunction();
+myFunction();
+```
 
 
 
